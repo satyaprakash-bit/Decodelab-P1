@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecodeLabs Studio — Build the Future</title>
+  <meta name="description" content="A responsive digital craftsmanship studio interface, built mobile-first with semantic HTML5, CSS Grid, Flexbox, and vanilla JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="DecodeLabs home">
+        <span class="logo-mark" aria-hidden="true">◈</span>
+        DecodeLabs
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#about" class="nav-link">Studio</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Start a project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <p class="eyebrow">Digital Craftsmanship · Batch 2026</p>
+        <h1>Build the Future,<br>one responsive layer at a time.</h1>
+        <p class="hero-lede">
+          DecodeLabs is a small studio that turns rough briefs into interfaces
+          that hold up on any screen — no frameworks, just HTML, CSS and
+          JavaScript done with care.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">See the work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-hidden="true">
+        <div class="mock-browser">
+          <div class="mock-browser-bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mock-browser-body">
+            <div class="mock-line mock-line--wide"></div>
+            <div class="mock-line mock-line--mid"></div>
+            <div class="mock-grid">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="work" aria-labelledby="work-heading">
+      <div class="section-head">
+        <h2 id="work-heading">Content Grid</h2>
+        <p>Every project starts in grayscale. Color only earns its place once the layout works.</p>
+      </div>
+
+      <div class="layout-grid">
+
+        <aside class="sidebar" aria-label="Filter projects">
+          <h3>Filter</h3>
+          <form id="filterForm">
+            <fieldset>
+              <legend class="sr-only">Project type</legend>
+              <label class="checkbox-row">
+                <input type="checkbox" name="filter" value="frontend" checked>
+                Frontend interfaces
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" name="filter" value="fullstack" checked>
+                Full-stack builds
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" name="filter" value="branding" checked>
+                Brand systems
+              </label>
+            </fieldset>
+          </form>
+          <p class="sidebar-note">Wireframe first. If it doesn't work in grayscale, color won't fix it.</p>
+        </aside>
+
+        <div class="card-grid" id="cardGrid">
+          <article class="card" data-type="frontend">
+            <div class="card-thumb card-thumb--a" aria-hidden="true"></div>
+            <span class="card-tag">Frontend</span>
+            <h3>The Responsive Architecture</h3>
+            <p>A mobile-first landing page built entirely on semantic HTML5 and CSS Grid.</p>
+          </article>
+
+          <article class="card" data-type="fullstack">
+            <div class="card-thumb card-thumb--b" aria-hidden="true"></div>
+            <span class="card-tag">Full-stack</span>
+            <h3>Studio Dashboard</h3>
+            <p>An internal tool pairing a Flexbox nav shell with a data-driven main view.</p>
+          </article>
+
+          <article class="card" data-type="branding">
+            <div class="card-thumb card-thumb--c" aria-hidden="true"></div>
+            <span class="card-tag">Branding</span>
+            <h3>Mocha &amp; Ethereal</h3>
+            <p>A warm, grounded 2025 palette applied across a client's product suite.</p>
+          </article>
+
+          <article class="card" data-type="frontend">
+            <div class="card-thumb card-thumb--a" aria-hidden="true"></div>
+            <span class="card-tag">Frontend</span>
+            <h3>Accessible by Default</h3>
+            <p>WCAG-conscious components with visible focus states and reduced motion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section content-section--alt" id="process" aria-labelledby="process-heading">
+      <div class="section-head">
+        <h2 id="process-heading">The Execution Roadmap</h2>
+        <p>Six stages, one continuous line from discovery to audit.</p>
+      </div>
+
+      <ol class="roadmap">
+        <li><span class="roadmap-step">1</span><h3>Discovery</h3><p>Define "how might we."</p></li>
+        <li><span class="roadmap-step">2</span><h3>Wireframe</h3><p>Grayscale, mobile-first.</p></li>
+        <li><span class="roadmap-step">3</span><h3>Semantics</h3><p>HTML landmarks.</p></li>
+        <li><span class="roadmap-step">4</span><h3>Style</h3><p>CSS Grid/Flex &amp; palette.</p></li>
+        <li><span class="roadmap-step">5</span><h3>Logic</h3><p>State &amp; interactivity.</p></li>
+        <li><span class="roadmap-step">6</span><h3>Audit</h3><p>Performance &amp; accessibility.</p></li>
+      </ol>
+    </section>
+
+    <section class="content-section" id="about" aria-labelledby="about-heading">
+      <div class="section-head">
+        <h2 id="about-heading">A counter, not a number chart</h2>
+        <p>Interactivity check — this counter runs on plain JavaScript, no build step.</p>
+      </div>
+      <div class="counter" role="group" aria-label="Line of code counter">
+        <button type="button" id="decrement" aria-label="Remove a line">−</button>
+        <span id="counterValue" aria-live="polite">0</span>
+        <button type="button" id="increment" aria-label="Add a line">+</button>
+        <p class="counter-label">lines of code written today</p>
+      </div>
+    </section>
+
+    <section class="content-section content-section--alt" id="contact" aria-labelledby="contact-heading">
+      <div class="section-head">
+        <h2 id="contact-heading">Start a project</h2>
+        <p>Tell us what you're building. We reply within two business days.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <span class="field-error" id="nameError" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="field-error" id="emailError" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="field-error" id="messageError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> DecodeLabs. Greater Lucknow, India.</p>
+      <ul class="footer-contact">
+        <li><a href="tel:+918933006408">+91 89330 06408</a></li>
+        <li><a href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a></li>
+        <li><a href="https://www.decodelabs.tech">decodelabs.tech</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
